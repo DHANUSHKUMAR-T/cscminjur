@@ -383,4 +383,99 @@ footer {
     background: white;
     color: #0000cc;
     transform: scale(1.05);
+
+}
+
+/* ===========================
+   MOBILE RESPONSIVE FIX
+=========================== */
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    /* Make sections full width */
+    .section,
+    .about-section,
+    .courses-section,
+    .staff-section,
+    .projects-section,
+    .contact-section {
+        width: 100%;
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    /* Founder/About section fix */
+    .about-founder {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .about-founder img {
+        width: 170px;
+        height: auto;
+        border-radius: 15px;
+    }
+
+    .about-founder .text-content {
+        width: 100%;
+        text-align: justify;
+        font-size: 15px;
+    }
+
+    /* Course cards responsive */
+    .courses-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course-btn,
+    .course-card {
+        width: 90%;
+        max-width: 350px;
+        text-align: left;
+    }
+
+    /* Staff cards responsive */
+    .staff-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .staff-card {
+        width: 90%;
+        max-width: 320px;
+    }
+
+    /* Projects section responsive */
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    /* Contact + Map responsive */
+    iframe {
+        width: 100% !important;
+        height: 250px !important;
+    }
+
+    /* Navbar responsive */
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px;
+    }
 }
